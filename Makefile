@@ -6,8 +6,8 @@ RED    := \033[0;31m
 NC     := \033[0m
 
 # Compiler 
-CC       := gcc
-CFLAGS   := -Wall -Wextra -Iinc -Iinclude -Isrc/x86 -Isrc/arm64 -w 
+CC       := gcc-15
+CFLAGS   := -Wall -Wextra -Iinc -Iinclude -Isrc/x86 -Isrc/arm64 -I/opt/homebrew/opt/openssl@3/include  -w 
 LDFLAGS  := -lcurl -lssl -lcrypto -lz -lpthread -framework CoreFoundation -framework Security -framework OpenDirectory 
 
 # Dir
